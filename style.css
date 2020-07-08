@@ -1,6 +1,5 @@
 @import url("https://use.typekit.net/xwu5cqb.css");
 
-
 /* all styles */
 * {
   margin: 0px;
@@ -10,97 +9,83 @@
   max-height: 100vh;
 }
 
-
 /* begin  main styling for body content */
 body {
-  display: grid;
-  grid-template-columns: 2fr 4fr 1fr;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: le-havre, sans-serif;
   background-color: #ffffff;
   color: rgb(0, 0, 0);
+  overflow: hidden;
 }
 
 header {
-  width: 100%;
-  height: 210px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
 }
 
 header svg {
-  max-width: 250px;
-  max-height: 250px;
+  width: 400px;
+  height: 380px;
+  padding-top: 2rem;
 }
 
-
-.asidewrap {
-  grid-column: 1/2;
-  grid-row: 1/4;
-  justify-self: end;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  margin: 0;
-}
-
-aside {
-  padding: 65px 0px 250px 0;
-}
-
-aside .portrait-box {
-  margin-left: 32px;
-}
-
-aside .portrait-box img {
-  max-width: 150px;
-}
-
-
-.email {
-  margin: 20px;
-  padding-left: 10px;
-  font-weight: bold;
-  font-size: 17px;
-}
-
-
-
-.img-wrap {
-  grid-column: 2/3;
-  grid-row: 2/2;
-  max-width: 550px;
+header img {
+  max-width: 100%;
+  position: relative;
+  left: 3rem;
+  clip-path: circle(50% at 50% 50%);
 }
 
 .img-box {
-  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 10vh 0;
   white-space: nowrap;
   overflow: hidden;
-  max-width: 100%;
   scroll-behavior: smooth;
-
+  width: 48vw;
 }
 
 .img-box img {
   vertical-align: middle;
-  margin-right: 30px;
-  max-height: 60vh;
-  max-width: 80%;
+  margin-right: 50px;
+  max-width: 100%;
+}
+.nav-socials {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding-bottom: 4px;
 }
 
-.img-box::-webkit-scrollbar {
-  display: none;
+.email {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
 }
 
-
-h2 {
-  grid-column: 3/3;
-}
 
 /* end of main styling for body content */
 
 
 /* beginning of left icon menu for social media links */
 
+.iconwrap {
+  max-width: 200px;
+}
+
 .icon {
-  font-size: 30px;
+  font-size: 40px;
   color: rgb(0, 0, 0);
   cursor: pointer;
   pointer-events: none;
@@ -142,7 +127,7 @@ h2 {
   position: relative;
   display: inline-block;
   margin-right: 30px;
-  font-size: 20px;
+  font-size: 40px;
   top: 10px;
   opacity: 0;
   transition: opacity 0.5s ease, top 0.5s ease;
@@ -212,37 +197,40 @@ span {
 
 
 /* begin styling for recent work menu */
-
-.menu2 {
-  padding: 16px;
+.menu--recent-work {
+  position: fixed;
+  right: 20px;
+  bottom: 0;
   cursor: pointer;
   pointer-events: none;
   font-family: le-havre, sans-serif;
   font-weight: bold;
-  font-size: 35px;
   color: rgb(0, 0, 0);
+  text-align: right;
 }
 
-.menu2:hover {
+.menu--recent-work:hover {
   pointer-events: all;
 }
 
-.label2 {
-  display: inline-block;
+.label--recent-work {
+  font-size: 50px;
+  display: block;
   cursor: pointer;
   pointer-events: all;
   text-transform: lowercase;
 }
 
-.spacer2 {
+.spacer--recent-work {
   display: inline-block;
-  width: 80px;
+  width: 120px;
   vertical-align: middle;
   cursor: pointer;
   position: relative;
+  left: -5rem;
 }
 
-.spacer2:before {
+.spacer--recent-work:before {
   content: "";
   position: absolute;
   border-bottom: 1px solid #8d3838;
@@ -252,14 +240,14 @@ span {
   transition-delay: 0.7s;
 }
 
-.item2 {
-  padding: 5px 0 10px 0;
+.item--recent-work {
+  padding: 10px 0;
   transform: translate(0.5px, 264.5px) matrix(1, 0, 0, 1, 127.5, -391.4999) rotate(deg);
   text-decoration: none;
   position: relative;
   display: block;
-  margin-right: 30px;
-  font-size: 20px;
+  margin-right: 20px;
+  font-size: 24px;
   line-height: 1rem;
   font-family: 'Times New Roman', Times, serif;
   font-weight: 400;
@@ -269,113 +257,117 @@ span {
   transition-delay: 0;
 }
 
+.linkwrapper--recent-work {
+  margin-bottom: 24vh;
+}
+
 a:link,
 a:visited {
   color: #000000;
 }
 
-menu2 a span {
+.menu--recent-work a span {
   transition: color 0.5s ease;
 }
 
-.item2:hover span {
+.item--recent-work:hover span {
   color: #7a5151;
 }
 
-.menu2:hover .spacer2:before {
+.menu--recent-work:hover .spacer--recent-work:before {
   width: 100%;
   transition-delay: 0s;
 }
 
-.menu2:hover .item2 {
+.menu--recent-work:hover .item--recent-work {
   opacity: 1;
   top: 0px;
 }
 
-.item2:nth-child(1) {
+.item--recent-work:nth-child(1) {
   transition-delay: 0.45s;
 }
 
-.item2:nth-child(2) {
+.item--recent-work:nth-child(2) {
   transition-delay: 0.4s;
 }
 
-.item2:nth-child(3) {
+.item--recent-work:nth-child(3) {
   transition-delay: 0.35s;
 }
 
-.item2:nth-child(4) {
+.item--recent-work:nth-child(4) {
   transition-delay: 0.3s;
 }
 
-.item2:nth-child(5) {
+.item--recent-work:nth-child(5) {
   transition-delay: 0.25s;
 }
 
-.item2:nth-child(6) {
+.item--recent-work:nth-child(6) {
   transition-delay: 0.2s;
 }
 
-.item2:nth-child(7) {
+.item--recent-work:nth-child(7) {
   transition-delay: 0.15s;
 }
 
-.item2:nth-child(8) {
+.item--recent-work:nth-child(8) {
   transition-delay: 0.1s;
 }
 
-.item2:nth-child(9) {
+.item--recent-work:nth-child(9) {
   transition-delay: 0.05s;
 }
 
-.item2:nth-child(10) {
+.item--recent-work:nth-child(10) {
   transition-delay: 0s;
 }
 
-.menu2:hover .item2:nth-child(1) {
+.menu--recent-work:hover .item--recent-work:nth-child(1) {
   transition-delay: 0.25s;
 }
 
-.menu2:hover .item2:nth-child(2) {
+.menu--recent-work:hover .item--recent-work:nth-child(2) {
   transition-delay: 0.3s;
 }
 
-.menu2:hover .item2:nth-child(3) {
+.menu--recent-work:hover .item--recent-work:nth-child(3) {
   transition-delay: 0.35s;
 }
 
-.menu2:hover .item2:nth-child(4) {
+.menu--recent-work:hover .item--recent-work:nth-child(4) {
   transition-delay: 0.4s;
 }
 
-.menu2:hover .item2:nth-child(5) {
+.menu--recent-work:hover .item--recent-work:nth-child(5) {
   transition-delay: 0.45s;
 }
 
-.menu2:hover .item2:nth-child(6) {
+.menu--recent-work:hover .item--recent-work:nth-child(6) {
   transition-delay: 0.5s;
 }
 
-.menu2:hover .item2:nth-child(7) {
+.menu--recent-work:hover .item--recent-work:nth-child(7) {
   transition-delay: 0.55s;
 }
 
-.menu2:hover .item2:nth-child(8) {
+.menu--recent-work:hover .item--recent-work:nth-child(8) {
   transition-delay: 0.6s;
 }
 
-.menu2:hover .item2:nth-child(9) {
+.menu--recent-work:hover .item--recent-work:nth-child(9) {
   transition-delay: 0.65s;
 }
 
-.menu2:hover .item2:nth-child(10) {
+.menu--recent-work:hover .item--recent-work:nth-child(10) {
   transition-delay: 0.7s;
 }
 
-
-/* end, big swag  */
-
-
-/* this website was designed and developed by sir william wesley
-
-www.will-greer.com */
+@media (max-width: 600px) {
+  .nav-socials {
+    position: fixed;
+    bottom: 40%;
+    left: 10%;
+  }
+}
