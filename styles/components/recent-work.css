@@ -1,0 +1,193 @@
+.menu--recent-work {
+  position: fixed;
+  right: 20px;
+  bottom: 0;
+  cursor: pointer;
+  pointer-events: none;
+  font-family: le-havre, sans-serif;
+  font-weight: bold;
+  color: black;
+  text-align: right;
+}
+
+.menu--recent-work:hover {
+  pointer-events: all;
+}
+
+.label--recent-work {
+  font-size: 50px;
+  display: block;
+  cursor: pointer;
+  pointer-events: all;
+  text-transform: lowercase;
+}
+
+.spacer--recent-work {
+  display: inline-block;
+  width: 120px;
+  vertical-align: middle;
+  cursor: pointer;
+  position: relative;
+  left: -5rem;
+}
+
+.spacer--recent-work:before {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid #8d3838;
+  height: 1px;
+  width: 0%;
+  -webkit-transition: width 0.25s ease;
+  transition: width 0.25s ease;
+  -webkit-transition-delay: 0.7s;
+          transition-delay: 0.7s;
+}
+
+.item--recent-work {
+  padding: 6px 0;
+  -webkit-transform: translate(0.5px, 264.5px) matrix(1, 0, 0, 1, 127.5, -391.4999) rotate(deg);
+          transform: translate(0.5px, 264.5px) matrix(1, 0, 0, 1, 127.5, -391.4999) rotate(deg);
+  text-decoration: none;
+  position: relative;
+  display: block;
+  margin-right: 10px;
+  font-size: 18px;
+  line-height: 1rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-style: italic;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease, top 0.5s ease;
+  transition: opacity 0.5s ease, top 0.5s ease;
+  -webkit-transition-delay: 0;
+          transition-delay: 0;
+}
+
+.linkwrapper--recent-work {
+  margin-bottom: 24vh;
+}
+
+a:link, a:visited {
+  color: #000000;
+}
+
+.menu--recent-work a span {
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+}
+
+.item--recent-work:hover span {
+  color: #7a5151;
+}
+
+.menu--recent-work:hover .spacer--recent-work:before {
+  width: 100%;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.menu--recent-work:hover .item--recent-work {
+  opacity: 1;
+  top: 0px;
+}
+
+.item--recent-work:nth-child(1) {
+  -webkit-transition-delay: 0.45s;
+          transition-delay: 0.45s;
+}
+
+.item--recent-work:nth-child(2) {
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+
+.item--recent-work:nth-child(3) {
+  -webkit-transition-delay: 0.35s;
+          transition-delay: 0.35s;
+}
+
+.item--recent-work:nth-child(4) {
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+.item--recent-work:nth-child(5) {
+  -webkit-transition-delay: 0.25s;
+          transition-delay: 0.25s;
+}
+
+.item--recent-work:nth-child(6) {
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.item--recent-work:nth-child(7) {
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
+}
+
+.item--recent-work:nth-child(8) {
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+.item--recent-work:nth-child(9) {
+  -webkit-transition-delay: 0.05s;
+          transition-delay: 0.05s;
+}
+
+.item--recent-work:nth-child(10) {
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.menu--recent-work:hover .item--recent-work:nth-child(1) {
+  -webkit-transition-delay: 0.25s;
+          transition-delay: 0.25s;
+}
+
+.menu--recent-work:hover .item--recent-work:nth-child(2) {
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+.menu--recent-work:hover .item--recent-work:nth-child(3) {
+  -webkit-transition-delay: 0.35s;
+          transition-delay: 0.35s;
+}
+
+.menu--recent-work:hover .item--recent-work:nth-child(4) {
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+
+.menu--recent-work:hover .item--recent-work:nth-child(5) {
+  -webkit-transition-delay: 0.45s;
+          transition-delay: 0.45s;
+}
+
+.menu--recent-work:hover .item--recent-work:nth-child(6) {
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+.menu--recent-work:hover .item--recent-work:nth-child(7) {
+  -webkit-transition-delay: 0.55s;
+          transition-delay: 0.55s;
+}
+
+.menu--recent-work:hover .item--recent-work:nth-child(8) {
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+}
+
+.menu--recent-work:hover .item--recent-work:nth-child(9) {
+  -webkit-transition-delay: 0.65s;
+          transition-delay: 0.65s;
+}
+
+.menu--recent-work:hover .item--recent-work:nth-child(10) {
+  -webkit-transition-delay: 0.7s;
+          transition-delay: 0.7s;
+}
+/*# sourceMappingURL=recent-work.css.map */

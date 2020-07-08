@@ -1,0 +1,176 @@
+// Recent Work links
+.menu--recent-work {
+  position: fixed;
+  right: 20px;
+  bottom: 0;
+  cursor: pointer;
+  pointer-events: none;
+  font-family: le-havre, sans-serif;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  text-align: right;
+
+  &:hover {
+    pointer-events: all;
+  }
+}
+
+.label--recent-work {
+  font-size: 50px;
+  display: block;
+  cursor: pointer;
+  pointer-events: all;
+  text-transform: lowercase;
+}
+
+.spacer--recent-work {
+  display: inline-block;
+  width: 120px;
+  vertical-align: middle;
+  cursor: pointer;
+  position: relative;
+  left: -5rem;
+
+  &:before {
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid #8d3838;
+    height: 1px;
+    width: 0%;
+    transition: width 0.25s ease;
+    transition-delay: 0.7s;
+  }
+}
+
+.item--recent-work {
+  padding: 6px 0;
+  transform: translate(0.5px, 264.5px) matrix(1, 0, 0, 1, 127.5, -391.4999) rotate(deg);
+  text-decoration: none;
+  position: relative;
+  display: block;
+  margin-right: 10px;
+  font-size: 18px;
+  line-height: 1rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-style: italic;
+  opacity: 0;
+  transition: opacity 0.5s ease, top 0.5s ease;
+  transition-delay: 0;
+}
+
+.linkwrapper--recent-work {
+  margin-bottom: 24vh;
+}
+
+a {
+
+  &:link,
+  &:visited {
+    color: #000000;
+  }
+}
+
+.menu--recent-work a span {
+  transition: color 0.5s ease;
+}
+
+.item--recent-work:hover span {
+  color: #7a5151;
+}
+
+.menu--recent-work:hover {
+  .spacer--recent-work:before {
+    width: 100%;
+    transition-delay: 0s;
+  }
+
+  .item--recent-work {
+    opacity: 1;
+    top: 0px;
+  }
+}
+
+.item--recent-work {
+  &:nth-child(1) {
+    transition-delay: 0.45s;
+  }
+
+  &:nth-child(2) {
+    transition-delay: 0.4s;
+  }
+
+  &:nth-child(3) {
+    transition-delay: 0.35s;
+  }
+
+  &:nth-child(4) {
+    transition-delay: 0.3s;
+  }
+
+  &:nth-child(5) {
+    transition-delay: 0.25s;
+  }
+
+  &:nth-child(6) {
+    transition-delay: 0.2s;
+  }
+
+  &:nth-child(7) {
+    transition-delay: 0.15s;
+  }
+
+  &:nth-child(8) {
+    transition-delay: 0.1s;
+  }
+
+  &:nth-child(9) {
+    transition-delay: 0.05s;
+  }
+
+  &:nth-child(10) {
+    transition-delay: 0s;
+  }
+}
+
+.menu--recent-work:hover .item--recent-work {
+  &:nth-child(1) {
+    transition-delay: 0.25s;
+  }
+
+  &:nth-child(2) {
+    transition-delay: 0.3s;
+  }
+
+  &:nth-child(3) {
+    transition-delay: 0.35s;
+  }
+
+  &:nth-child(4) {
+    transition-delay: 0.4s;
+  }
+
+  &:nth-child(5) {
+    transition-delay: 0.45s;
+  }
+
+  &:nth-child(6) {
+    transition-delay: 0.5s;
+  }
+
+  &:nth-child(7) {
+    transition-delay: 0.55s;
+  }
+
+  &:nth-child(8) {
+    transition-delay: 0.6s;
+  }
+
+  &:nth-child(9) {
+    transition-delay: 0.65s;
+  }
+
+  &:nth-child(10) {
+    transition-delay: 0.7s;
+  }
+}

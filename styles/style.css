@@ -1,72 +1,4 @@
 @import url("https://use.typekit.net/xwu5cqb.css");
-* {
-  margin: 0px;
-  padding: 0px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  max-width: 100vw;
-}
-
-body {
-  font-family: le-havre, sans-serif;
-  background-color: #ffffff;
-  color: black;
-  overflow: hidden;
-}
-
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  max-height: 300px;
-}
-
-header svg {
-  width: 400px;
-  height: 380px;
-  padding-top: 2rem;
-}
-
-header img {
-  max-width: 100%;
-  position: relative;
-  left: 3rem;
-  -webkit-clip-path: circle(50% at 50% 50%);
-          clip-path: circle(50% at 50% 50%);
-}
-
-.nav-socials {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  padding-bottom: 4px;
-}
-
-@media (max-width: 425px) {
-  .nav-socials {
-    position: fixed;
-    bottom: 40%;
-    left: 10%;
-  }
-}
-
-.email {
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  font-weight: bold;
-  font-size: 20px;
-  text-decoration: none;
-}
-
 .iconwrap {
   max-width: 200px;
 }
@@ -76,7 +8,6 @@ header img {
   color: black;
   cursor: pointer;
   pointer-events: none;
-  margin-top: 1.2vh;
 }
 
 .icon:hover {
@@ -390,6 +321,80 @@ a:link, a:visited {
           transition-delay: 0.7s;
 }
 
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 100vw;
+}
+
+body {
+  font-family: le-havre, sans-serif;
+  background-color: #ffffff;
+  color: black;
+  overflow: hidden;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-height: 300px;
+}
+
+header svg {
+  width: 400px;
+  height: 380px;
+  padding-top: 2rem;
+}
+
+header img {
+  max-width: 100%;
+  position: relative;
+  left: 3rem;
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
+}
+
+.nav-socials {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding-bottom: 4px;
+}
+
+@media (max-width: 425px) {
+  .nav-socials {
+    position: fixed;
+    bottom: 40%;
+    left: 10%;
+  }
+}
+
+.email {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+  -webkit-transition: opacity 0.8s ease;
+  transition: opacity 0.8s ease;
+}
+
+.email:hover {
+  opacity: .5;
+}
+
 .img-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -408,9 +413,9 @@ a:link, a:visited {
   scroll-behavior: smooth;
 }
 
-.img-box .img-box--inside img {
+.img-box img {
   vertical-align: middle;
-  padding: 0 1.1rem;
+  padding: 0 1.5rem;
   max-width: 100%;
 }
 
