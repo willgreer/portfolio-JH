@@ -1,29 +1,41 @@
 @import url("https://use.typekit.net/xwu5cqb.css");
-
 /* all styles */
 * {
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   max-width: 100vw;
   max-height: 100vh;
 }
 
 /* begin  main styling for body content */
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-family: le-havre, sans-serif;
   background-color: #ffffff;
-  color: rgb(0, 0, 0);
+  color: black;
   overflow: hidden;
 }
 
 header {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 300px;
 }
 
@@ -37,14 +49,16 @@ header img {
   max-width: 100%;
   position: relative;
   left: 3rem;
-  clip-path: circle(50% at 50% 50%);
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
 }
 
 .img-box {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   margin: 10vh 0;
   white-space: nowrap;
   overflow: hidden;
@@ -57,6 +71,7 @@ header img {
   margin-right: 50px;
   max-width: 100%;
 }
+
 .nav-socials {
   position: fixed;
   bottom: 0;
@@ -68,25 +83,22 @@ header img {
   position: fixed;
   bottom: 0;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   font-weight: bold;
   font-size: 20px;
   text-decoration: none;
 }
 
-
 /* end of main styling for body content */
-
-
 /* beginning of left icon menu for social media links */
-
 .iconwrap {
   max-width: 200px;
 }
 
 .icon {
   font-size: 40px;
-  color: rgb(0, 0, 0);
+  color: black;
   cursor: pointer;
   pointer-events: none;
 }
@@ -119,8 +131,10 @@ header img {
   border-bottom: 1px solid #000000;
   height: 1px;
   width: 0%;
+  -webkit-transition: width 0.25s ease;
   transition: width 0.25s ease;
-  transition-delay: 0.7s;
+  -webkit-transition-delay: 0.7s;
+          transition-delay: 0.7s;
 }
 
 .item {
@@ -130,12 +144,15 @@ header img {
   font-size: 40px;
   top: 10px;
   opacity: 0;
+  -webkit-transition: opacity 0.5s ease, top 0.5s ease;
   transition: opacity 0.5s ease, top 0.5s ease;
-  transition-delay: 0;
+  -webkit-transition-delay: 0;
+          transition-delay: 0;
   text-decoration: none;
 }
 
 span {
+  -webkit-transition: color 0.5s ease;
   transition: color 0.5s ease;
 }
 
@@ -145,7 +162,8 @@ span {
 
 .icon:hover .spacer:before {
   width: 100%;
-  transition-delay: 0s;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
 }
 
 .icon:hover .item {
@@ -154,48 +172,56 @@ span {
 }
 
 .icon:hover .item:nth-child(1) {
-  transition-delay: 0.25s;
+  -webkit-transition-delay: 0.25s;
+          transition-delay: 0.25s;
 }
 
 .icon:hover .item:nth-child(2) {
-  transition-delay: 0.3s;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
 }
 
 .icon:hover .item:nth-child(3) {
-  transition-delay: 0.35s;
+  -webkit-transition-delay: 0.35s;
+          transition-delay: 0.35s;
 }
 
 .icon:hover .item:nth-child(4) {
-  transition-delay: 0.4s;
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
 }
 
 .icon:hover .item:nth-child(5) {
-  transition-delay: 0.45s;
+  -webkit-transition-delay: 0.45s;
+          transition-delay: 0.45s;
 }
 
 .icon:hover .item:nth-child(6) {
-  transition-delay: 0.5s;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
 }
 
 .icon:hover .item:nth-child(7) {
-  transition-delay: 0.55s;
+  -webkit-transition-delay: 0.55s;
+          transition-delay: 0.55s;
 }
 
 .icon:hover .item:nth-child(8) {
-  transition-delay: 0.6s;
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
 }
 
 .icon:hover .item:nth-child(9) {
-  transition-delay: 0.65s;
+  -webkit-transition-delay: 0.65s;
+          transition-delay: 0.65s;
 }
 
 .icon:hover .item:nth-child(10) {
-  transition-delay: 0.7s;
+  -webkit-transition-delay: 0.7s;
+          transition-delay: 0.7s;
 }
 
 /* end icons */
-
-
 /* begin styling for recent work menu */
 .menu--recent-work {
   position: fixed;
@@ -205,7 +231,7 @@ span {
   pointer-events: none;
   font-family: le-havre, sans-serif;
   font-weight: bold;
-  color: rgb(0, 0, 0);
+  color: black;
   text-align: right;
 }
 
@@ -236,13 +262,16 @@ span {
   border-bottom: 1px solid #8d3838;
   height: 1px;
   width: 0%;
+  -webkit-transition: width 0.25s ease;
   transition: width 0.25s ease;
-  transition-delay: 0.7s;
+  -webkit-transition-delay: 0.7s;
+          transition-delay: 0.7s;
 }
 
 .item--recent-work {
   padding: 10px 0;
-  transform: translate(0.5px, 264.5px) matrix(1, 0, 0, 1, 127.5, -391.4999) rotate(deg);
+  -webkit-transform: translate(0.5px, 264.5px) matrix(1, 0, 0, 1, 127.5, -391.4999) rotate(deg);
+          transform: translate(0.5px, 264.5px) matrix(1, 0, 0, 1, 127.5, -391.4999) rotate(deg);
   text-decoration: none;
   position: relative;
   display: block;
@@ -253,20 +282,22 @@ span {
   font-weight: 400;
   font-style: italic;
   opacity: 0;
+  -webkit-transition: opacity 0.5s ease, top 0.5s ease;
   transition: opacity 0.5s ease, top 0.5s ease;
-  transition-delay: 0;
+  -webkit-transition-delay: 0;
+          transition-delay: 0;
 }
 
 .linkwrapper--recent-work {
   margin-bottom: 24vh;
 }
 
-a:link,
-a:visited {
+a:link, a:visited {
   color: #000000;
 }
 
 .menu--recent-work a span {
+  -webkit-transition: color 0.5s ease;
   transition: color 0.5s ease;
 }
 
@@ -276,7 +307,8 @@ a:visited {
 
 .menu--recent-work:hover .spacer--recent-work:before {
   width: 100%;
-  transition-delay: 0s;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
 }
 
 .menu--recent-work:hover .item--recent-work {
@@ -285,83 +317,103 @@ a:visited {
 }
 
 .item--recent-work:nth-child(1) {
-  transition-delay: 0.45s;
+  -webkit-transition-delay: 0.45s;
+          transition-delay: 0.45s;
 }
 
 .item--recent-work:nth-child(2) {
-  transition-delay: 0.4s;
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
 }
 
 .item--recent-work:nth-child(3) {
-  transition-delay: 0.35s;
+  -webkit-transition-delay: 0.35s;
+          transition-delay: 0.35s;
 }
 
 .item--recent-work:nth-child(4) {
-  transition-delay: 0.3s;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
 }
 
 .item--recent-work:nth-child(5) {
-  transition-delay: 0.25s;
+  -webkit-transition-delay: 0.25s;
+          transition-delay: 0.25s;
 }
 
 .item--recent-work:nth-child(6) {
-  transition-delay: 0.2s;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
 }
 
 .item--recent-work:nth-child(7) {
-  transition-delay: 0.15s;
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
 }
 
 .item--recent-work:nth-child(8) {
-  transition-delay: 0.1s;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
 }
 
 .item--recent-work:nth-child(9) {
-  transition-delay: 0.05s;
+  -webkit-transition-delay: 0.05s;
+          transition-delay: 0.05s;
 }
 
 .item--recent-work:nth-child(10) {
-  transition-delay: 0s;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
 }
 
 .menu--recent-work:hover .item--recent-work:nth-child(1) {
-  transition-delay: 0.25s;
+  -webkit-transition-delay: 0.25s;
+          transition-delay: 0.25s;
 }
 
 .menu--recent-work:hover .item--recent-work:nth-child(2) {
-  transition-delay: 0.3s;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
 }
 
 .menu--recent-work:hover .item--recent-work:nth-child(3) {
-  transition-delay: 0.35s;
+  -webkit-transition-delay: 0.35s;
+          transition-delay: 0.35s;
 }
 
 .menu--recent-work:hover .item--recent-work:nth-child(4) {
-  transition-delay: 0.4s;
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
 }
 
 .menu--recent-work:hover .item--recent-work:nth-child(5) {
-  transition-delay: 0.45s;
+  -webkit-transition-delay: 0.45s;
+          transition-delay: 0.45s;
 }
 
 .menu--recent-work:hover .item--recent-work:nth-child(6) {
-  transition-delay: 0.5s;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
 }
 
 .menu--recent-work:hover .item--recent-work:nth-child(7) {
-  transition-delay: 0.55s;
+  -webkit-transition-delay: 0.55s;
+          transition-delay: 0.55s;
 }
 
 .menu--recent-work:hover .item--recent-work:nth-child(8) {
-  transition-delay: 0.6s;
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
 }
 
 .menu--recent-work:hover .item--recent-work:nth-child(9) {
-  transition-delay: 0.65s;
+  -webkit-transition-delay: 0.65s;
+          transition-delay: 0.65s;
 }
 
 .menu--recent-work:hover .item--recent-work:nth-child(10) {
-  transition-delay: 0.7s;
+  -webkit-transition-delay: 0.7s;
+          transition-delay: 0.7s;
 }
 
 @media (max-width: 600px) {
@@ -371,3 +423,4 @@ a:visited {
     left: 10%;
   }
 }
+/*# sourceMappingURL=style.css.map */
