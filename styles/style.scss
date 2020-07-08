@@ -8,9 +8,14 @@
   padding: 0px;
   box-sizing: border-box;
   max-width: 100vw;
+  max-height: 100vh;
 }
 
 body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   font-family: le-havre, sans-serif;
   background-color: #ffffff;
   color: rgb(0, 0, 0);
@@ -23,10 +28,18 @@ header {
   justify-content: center;
   max-height: 300px;
 
+  @include media('<=phone') {
+    max-height: 200px;
+  }
+
   svg {
-    width: 400px;
+    width: 300px;
     height: 380px;
     padding-top: 2rem;
+
+    @include media('<=phone') {
+      max-height: 200px;
+    }
   }
 
   img {
@@ -34,6 +47,10 @@ header {
     position: relative;
     left: 3rem;
     clip-path: circle(50% at 50% 50%);
+
+    @include media('<=phone') {
+      max-width: 50%;
+    }
   }
 }
 
@@ -44,10 +61,13 @@ header {
   padding-bottom: 4px;
 
   @include media('<=phone') {
-    position: fixed;
-    bottom: 40%;
-    left: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
   }
+
 }
 
 .email {
@@ -68,6 +88,7 @@ header {
 .img-box {
   display: flex;
   align-items: center;
+  justify-content: center;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -77,33 +98,54 @@ header {
   overflow: hidden;
   scroll-behavior: smooth;
 
+  @include media('<=phone') {
+    width: 75%;
+  }
+
   img {
     vertical-align: middle;
-    padding: 0 1.5rem;
+    padding: 0 .5rem 0 2rem;
     max-width: 100%;
+
+    @include media('<=phone') {
+      max-width: 90%;
+    }
   }
+
+
 }
 
 
 .arrows {
-  z-index: 1;
-  width: 100%;
-  background: #000;
-
-  &:hover {
-    cursor: pointer;
-  }
-
   .arrow-left {
     position: absolute;
     bottom: 40vh;
     left: 20vw;
-    // display: none;
+    transition: opacity 0.5s ease-in-out;
+
+    @include media('<=phone') {
+      display: none;
+    }
+
+    &:hover {
+      cursor: pointer;
+      opacity: .8;
+    }
   }
 
   .arrow-right {
     position: absolute;
     bottom: 40vh;
     right: 20vw;
+    transition: opacity 0.5s ease-in-out;
+
+    @include media('<=phone') {
+      display: none;
+    }
+
+    &:hover {
+      cursor: pointer;
+      opacity: .8;
+    }
   }
 }
