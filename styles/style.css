@@ -374,8 +374,8 @@ header svg {
 
 @media (max-width: 425px) {
   header svg {
-    height: 200px;
-    width: 280px;
+    max-height: 200px;
+    max-width: 280px;
     padding: 1rem 0 0 1rem;
   }
 }
@@ -389,8 +389,8 @@ header img {
 
 @media (max-width: 425px) {
   header img {
-    width: 100px;
-    height: 100px;
+    max-width: 100px;
+    max-height: 100px;
   }
 }
 
@@ -589,7 +589,6 @@ header img {
   .item--recent-work {
     font-size: 14px;
     padding: 0;
-    background-color: rgba(245, 245, 245, 0.24);
   }
 }
 

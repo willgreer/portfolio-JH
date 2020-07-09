@@ -15,11 +15,3 @@ arrowRight.addEventListener('click', function (e) {
 arrowLeft.addEventListener('click', function (e) {
     page.scrollLeft -= 500;
 })
-
-if (window.innerWidth <= '762') {
-    const icon_IG = document.querySelectorAll(".fab fa-instagram");
-    const icon_TWITTER = document.querySelectorAll(".fab fa-twitter");
-    const icon_LINKDIN = document.querySelectorAll(".fab fa-linkedin");
-
-    icon_IG.innerHTML = "<a href='https://www.instagram.com/dancinglaugh/'></a>";
-}
