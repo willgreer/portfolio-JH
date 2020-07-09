@@ -57,10 +57,13 @@
   opacity: 0;
   transition: opacity 0.5s ease, top 0.5s ease;
   transition-delay: 0;
+
 }
 
 .linkwrapper--recent-work {
   margin-bottom: 24vh;
+  background-color: rgba(245, 245, 245, 0.26);
+
 }
 
 a {

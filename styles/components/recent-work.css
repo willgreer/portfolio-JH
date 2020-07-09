@@ -65,6 +65,7 @@
 
 .linkwrapper--recent-work {
   margin-bottom: 24vh;
+  background-color: rgba(245, 245, 245, 0.26);
 }
 
 a:link, a:visited {

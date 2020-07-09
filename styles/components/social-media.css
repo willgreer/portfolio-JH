@@ -1,24 +1,15 @@
-.nav-socials {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  padding-bottom: 4px;
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.icon {
+.label-wrap {
   font-size: 32px;
   color: black;
   cursor: pointer;
   pointer-events: none;
 }
 
-.icon:hover {
+.label-wrap:hover {
   pointer-events: all;
 }
 
-.label {
+.icon {
   padding-left: 20px;
   display: inline-block;
   cursor: pointer;
@@ -59,7 +50,6 @@
   transition: opacity 0.5s ease, top 0.5s ease;
   -webkit-transition-delay: 0;
           transition-delay: 0;
-  text-decoration: none;
 }
 
 span {
@@ -71,63 +61,63 @@ span {
   color: #835a5a;
 }
 
-.icon:hover .spacer:before {
+.label-wrap:hover .spacer:before {
   width: 100%;
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
 }
 
-.icon:hover .item {
+.label-wrap:hover .item {
   opacity: 1;
   top: 0px;
 }
 
-.icon:hover .item:nth-child(1) {
+.label-wrap:hover .item:nth-child(1) {
   -webkit-transition-delay: 0.25s;
           transition-delay: 0.25s;
 }
 
-.icon:hover .item:nth-child(2) {
+.label-wrap:hover .item:nth-child(2) {
   -webkit-transition-delay: 0.3s;
           transition-delay: 0.3s;
 }
 
-.icon:hover .item:nth-child(3) {
+.label-wrap:hover .item:nth-child(3) {
   -webkit-transition-delay: 0.35s;
           transition-delay: 0.35s;
 }
 
-.icon:hover .item:nth-child(4) {
+.label-wrap:hover .item:nth-child(4) {
   -webkit-transition-delay: 0.4s;
           transition-delay: 0.4s;
 }
 
-.icon:hover .item:nth-child(5) {
+.label-wrap:hover .item:nth-child(5) {
   -webkit-transition-delay: 0.45s;
           transition-delay: 0.45s;
 }
 
-.icon:hover .item:nth-child(6) {
+.label-wrap:hover .item:nth-child(6) {
   -webkit-transition-delay: 0.5s;
           transition-delay: 0.5s;
 }
 
-.icon:hover .item:nth-child(7) {
+.label-wrap:hover .item:nth-child(7) {
   -webkit-transition-delay: 0.55s;
           transition-delay: 0.55s;
 }
 
-.icon:hover .item:nth-child(8) {
+.label-wrap:hover .item:nth-child(8) {
   -webkit-transition-delay: 0.6s;
           transition-delay: 0.6s;
 }
 
-.icon:hover .item:nth-child(9) {
+.label-wrap:hover .item:nth-child(9) {
   -webkit-transition-delay: 0.65s;
           transition-delay: 0.65s;
 }
 
-.icon:hover .item:nth-child(10) {
+.label-wrap:hover .item:nth-child(10) {
   -webkit-transition-delay: 0.7s;
           transition-delay: 0.7s;
 }
