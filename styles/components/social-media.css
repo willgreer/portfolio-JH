@@ -1,15 +1,27 @@
-.label-wrap {
+.nav-socials {
+  -webkit-transition: opacity 0.5s ease, top 0.5s ease;
+  transition: opacity 0.5s ease, top 0.5s ease;
+  -webkit-transition-delay: 0;
+          transition-delay: 0;
+  position: fixed;
+  bottom: 1rem;
+  left: 0;
+  width: 100%;
+  max-height: 100%;
+}
+
+.nav-socials .label-wrap {
   font-size: 32px;
   color: black;
   cursor: pointer;
   pointer-events: none;
 }
 
-.label-wrap:hover {
+.nav-socials .label-wrap:hover {
   pointer-events: all;
 }
 
-.icon {
+.nav-socials .icon {
   padding-left: 20px;
   display: inline-block;
   cursor: pointer;
@@ -17,7 +29,11 @@
   font-weight: 900;
 }
 
-.spacer {
+.nav-socials .icon:hover {
+  opacity: .5;
+}
+
+.nav-socials .spacer {
   display: inline-block;
   width: 40px;
   margin-left: 15px;
@@ -27,7 +43,7 @@
   position: relative;
 }
 
-.spacer:before {
+.nav-socials .spacer:before {
   content: "";
   position: absolute;
   border-bottom: 1px solid #000000;
@@ -39,7 +55,7 @@
           transition-delay: 0.7s;
 }
 
-.item {
+.nav-socials .item {
   position: relative;
   display: inline-block;
   margin-right: 30px;
@@ -52,72 +68,72 @@
           transition-delay: 0;
 }
 
-span {
+.nav-socials span {
   -webkit-transition: color 0.5s ease;
   transition: color 0.5s ease;
 }
 
-.item:hover span {
+.nav-socials .item:hover span {
   color: #835a5a;
 }
 
-.label-wrap:hover .spacer:before {
+.nav-socials .label-wrap:hover .spacer:before {
   width: 100%;
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
 }
 
-.label-wrap:hover .item {
+.nav-socials .label-wrap:hover .item {
   opacity: 1;
   top: 0px;
 }
 
-.label-wrap:hover .item:nth-child(1) {
+.nav-socials .label-wrap:hover .item:nth-child(1) {
   -webkit-transition-delay: 0.25s;
           transition-delay: 0.25s;
 }
 
-.label-wrap:hover .item:nth-child(2) {
+.nav-socials .label-wrap:hover .item:nth-child(2) {
   -webkit-transition-delay: 0.3s;
           transition-delay: 0.3s;
 }
 
-.label-wrap:hover .item:nth-child(3) {
+.nav-socials .label-wrap:hover .item:nth-child(3) {
   -webkit-transition-delay: 0.35s;
           transition-delay: 0.35s;
 }
 
-.label-wrap:hover .item:nth-child(4) {
+.nav-socials .label-wrap:hover .item:nth-child(4) {
   -webkit-transition-delay: 0.4s;
           transition-delay: 0.4s;
 }
 
-.label-wrap:hover .item:nth-child(5) {
+.nav-socials .label-wrap:hover .item:nth-child(5) {
   -webkit-transition-delay: 0.45s;
           transition-delay: 0.45s;
 }
 
-.label-wrap:hover .item:nth-child(6) {
+.nav-socials .label-wrap:hover .item:nth-child(6) {
   -webkit-transition-delay: 0.5s;
           transition-delay: 0.5s;
 }
 
-.label-wrap:hover .item:nth-child(7) {
+.nav-socials .label-wrap:hover .item:nth-child(7) {
   -webkit-transition-delay: 0.55s;
           transition-delay: 0.55s;
 }
 
-.label-wrap:hover .item:nth-child(8) {
+.nav-socials .label-wrap:hover .item:nth-child(8) {
   -webkit-transition-delay: 0.6s;
           transition-delay: 0.6s;
 }
 
-.label-wrap:hover .item:nth-child(9) {
+.nav-socials .label-wrap:hover .item:nth-child(9) {
   -webkit-transition-delay: 0.65s;
           transition-delay: 0.65s;
 }
 
-.label-wrap:hover .item:nth-child(10) {
+.nav-socials .label-wrap:hover .item:nth-child(10) {
   -webkit-transition-delay: 0.7s;
           transition-delay: 0.7s;
 }
