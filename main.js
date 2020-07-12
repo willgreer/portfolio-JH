@@ -1,17 +1,19 @@
-
 const page = document.querySelector(".img-box");
-const arrowRight = document.querySelector('.arrow-right');
 const arrowLeft = document.querySelector('.arrow-left');
+const arrowRight = document.querySelector('.arrow-right');
+
+
 
 document.addEventListener('wheel', function (e) {
-    if (e.deltaY > 0) page.scrollLeft += 500;
-    else page.scrollLeft -= 500;
+    e.deltaY > 0
+        ? page.scrollLeft += 1000
+        : page.scrollLeft -= 1000;
 });
 
-arrowRight.addEventListener('click', function (e) {
-    page.scrollLeft += 500;
+arrowRight.addEventListener('click', function () {
+    page.scrollLeft += 1000;
 })
 
-arrowLeft.addEventListener('click', function (e) {
-    page.scrollLeft -= 500;
+arrowLeft.addEventListener('click', function () {
+    page.scrollLeft -= 1000;
 })

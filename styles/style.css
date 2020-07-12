@@ -390,11 +390,6 @@ a:link, a:visited {
           transition-delay: 0.7s;
 }
 
-:root {
-  --img-box--width: calc()
-;
-}
-
 * {
   margin: 0px;
   padding: 0px;
@@ -492,6 +487,7 @@ header > .wrapper > img {
 }
 
 .img-box {
+  margin-left: var(--x);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -509,9 +505,9 @@ header > .wrapper > img {
   white-space: nowrap;
   scroll-behavior: smooth;
   margin: 10vh 0;
-  max-width: 520px;
   overflow-x: hidden;
   z-index: 1;
+  width: 100%;
   -ms-scroll-snap-type: inline mandatory;
       scroll-snap-type: inline mandatory;
 }
@@ -532,23 +528,21 @@ header > .wrapper > img {
 }
 
 .img-box img {
+  display: inline-block;
   vertical-align: middle;
   scroll-snap-align: center;
-  padding: 0 .5rem 0 .5rem;
-  width: 80%;
+  max-height: 95vw;
+  max-width: 95vw;
 }
 
-@media (max-width: 425px) {
-  .img-box img {
-    padding: 0 .2rem 0 auto;
-    margin: 2rem auto;
-    width: 75vw;
-  }
+.img-box img:nth-child(n) {
+  margin-left: 50%;
+  margin-right: 50%;
 }
 
 .arrows {
-  display: none;
-  font-size: .7rem;
+  font-size: .5rem;
+  z-index: 10;
 }
 
 .arrows .arrow-left {
@@ -561,13 +555,14 @@ header > .wrapper > img {
 
 @media (max-width: 768px) {
   .arrows .arrow-left {
-    left: 1vw;
+    left: 40vw;
   }
 }
 
 @media (max-width: 425px) {
   .arrows .arrow-left {
-    bottom: 20vh;
+    bottom: 7vh;
+    z-index: 10;
   }
 }
 
@@ -586,13 +581,14 @@ header > .wrapper > img {
 
 @media (max-width: 768px) {
   .arrows .arrow-right {
-    right: 1vw;
+    right: 40vw;
   }
 }
 
 @media (max-width: 425px) {
   .arrows .arrow-right {
-    display: none;
+    bottom: 7vh;
+    z-index: 10;
   }
 }
 
