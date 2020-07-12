@@ -129,7 +129,7 @@ header {
 .arrows {
   font-size: .5rem;
   z-index: 10;
-
+  visibility: hidden;
   .arrow-left {
     position: absolute;
     bottom: 40vh;
@@ -137,7 +137,9 @@ header {
     transition: opacity 0.5s ease-in-out;
 
     @include media('<=tablet') {
-      left: 40vw;
+      left: 45vw;
+      bottom: 7vh;
+
     }
 
     @include media('<=phone') {
@@ -158,7 +160,9 @@ header {
     transition: opacity 0.5s ease-in-out;
 
     @include media('<=tablet') {
-      right: 40vw;
+      right: 45vw;
+      bottom: 7vh;
+
     }
 
     @include media('<=phone') {
@@ -175,7 +179,8 @@ header {
 
 
 .email {
-  position: fixed;
+  position: absolute;
+  display: block;
   bottom: .70rem;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -190,7 +195,6 @@ header {
 
   @include media('<=tablet') {
     font-size: .75rem;
-    position: absolute;
     top: 10%;
     transform: translate(-50%, -10%);
   }

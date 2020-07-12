@@ -543,6 +543,7 @@ header > .wrapper > img {
 .arrows {
   font-size: .5rem;
   z-index: 10;
+  visibility: hidden;
 }
 
 .arrows .arrow-left {
@@ -555,7 +556,8 @@ header > .wrapper > img {
 
 @media (max-width: 768px) {
   .arrows .arrow-left {
-    left: 40vw;
+    left: 45vw;
+    bottom: 7vh;
   }
 }
 
@@ -581,7 +583,8 @@ header > .wrapper > img {
 
 @media (max-width: 768px) {
   .arrows .arrow-right {
-    right: 40vw;
+    right: 45vw;
+    bottom: 7vh;
   }
 }
 
@@ -598,7 +601,8 @@ header > .wrapper > img {
 }
 
 .email {
-  position: fixed;
+  position: absolute;
+  display: block;
   bottom: .70rem;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -617,7 +621,6 @@ header > .wrapper > img {
 @media (max-width: 768px) {
   .email {
     font-size: .75rem;
-    position: absolute;
     top: 10%;
     -webkit-transform: translate(-50%, -10%);
             transform: translate(-50%, -10%);
