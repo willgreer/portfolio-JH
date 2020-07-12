@@ -9,6 +9,7 @@
   font-weight: bold;
   color: rgb(0, 0, 0);
   text-align: right;
+  z-index: 5;
 
   &:hover {
     pointer-events: all;
@@ -77,6 +78,7 @@
 }
 
 a {
+
   &:link,
   &:visited {
     color: #000000;
