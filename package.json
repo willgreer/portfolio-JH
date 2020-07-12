@@ -1,0 +1,25 @@
+{
+  "name": "julesfinal",
+  "version": "1.0.0",
+  "description": "portfolio design",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/willgreer/portfolio-JH.git"
+  },
+  "keywords": [
+    "frontend"
+  ],
+  "author": "will greer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/willgreer/portfolio-JH/issues"
+  },
+  "homepage": "https://github.com/willgreer/portfolio-JH#readme",
+  "dependencies": {
+    "normalize": "^0.3.1"
+  }
+}
