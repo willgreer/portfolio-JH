@@ -122,6 +122,10 @@ header {
   position: absolute;
   top: 55%;
 
+  @include media ('<=tablet') {
+    display: none;
+  }
+
   .arrow-left {
     margin-left: 10rem;
   }
