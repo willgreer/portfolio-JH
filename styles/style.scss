@@ -124,8 +124,8 @@ header {
 
 .arrows {
   font-size: .5rem;
-  z-index: 10;
-  visibility: hidden;
+  z-index: 100;
+  // visibility: hidden;
   .arrow-left {
     position: absolute;
     bottom: 40vh;
