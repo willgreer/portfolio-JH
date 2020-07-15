@@ -20,7 +20,6 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    max-width: 100vw;
     padding: 0;
   }
 }
@@ -198,11 +197,12 @@
 @media (max-width: 768px) {
   .menu--recent-work > .label--recent-work {
     font-size: 1rem;
+    bottom: .5rem;
   }
 }
 
 .label--recent-work {
-  font-size: 2rem;
+  font-size: 1.5rem;
   display: block;
   cursor: pointer;
   pointer-events: all;
@@ -600,7 +600,7 @@ header > .wrapper > img {
 .email {
   position: absolute;
   display: block;
-  bottom: .70rem;
+  bottom: .50rem;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -618,6 +618,7 @@ header > .wrapper > img {
 @media (max-width: 768px) {
   .email {
     font-size: .75rem;
+    bottom: .4rem;
   }
 }
 
