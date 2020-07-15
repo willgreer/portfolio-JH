@@ -122,57 +122,6 @@ header {
 }
 
 
-.arrows {
-  font-size: .5rem;
-  z-index: 100;
-  // visibility: hidden;
-  .arrow-left {
-    position: absolute;
-    bottom: 40vh;
-    left: 20vw;
-    transition: opacity 0.5s ease-in-out;
-
-    @include media('<=tablet') {
-      left: 45vw;
-      bottom: 7vh;
-
-    }
-
-    @include media('<=phone') {
-      bottom: 7vh;
-      z-index: 10;
-    }
-
-    &:hover {
-      cursor: pointer;
-      opacity: .8;
-    }
-  }
-
-  .arrow-right {
-    position: absolute;
-    bottom: 40vh;
-    right: 20vw;
-    transition: opacity 0.5s ease-in-out;
-
-    @include media('<=tablet') {
-      right: 45vw;
-      bottom: 7vh;
-
-    }
-
-    @include media('<=phone') {
-      bottom: 7vh;
-      z-index: 10;
-    }
-
-    &:hover {
-      cursor: pointer;
-      opacity: .8;
-    }
-  }
-}
-
 
 .email {
   position: absolute;
