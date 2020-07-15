@@ -1,8 +1,8 @@
 @import url("https://use.typekit.net/xwu5cqb.css");
-@import "/node_modules/normalize-scss/sass/normalize";
-@import '/breakpoints.scss';
-@import '/styles/components/social-media';
-@import '/styles/components/recent-work';
+@import "../node_modules/normalize-scss/sass/normalize";
+@import '../breakpoints';
+@import './styles/components/social-media';
+@import './styles/components/recent-work';
 
 
 
@@ -22,6 +22,7 @@ body {
   font-family: le-havre, sans-serif;
   background-color: #ffffff;
   color: rgb(0, 0, 0);
+  overflow-y: hidden;
 }
 
 header {
