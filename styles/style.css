@@ -78,15 +78,13 @@
 }
 
 @media (max-width: 768px) {
-  .nav-socials .spacer,
-  .nav-socials > span {
+  .nav-socials .spacer {
     display: none;
   }
 }
 
 @media (max-width: 768px) {
-  .nav-socials .spacer:before,
-  .nav-socials > span:before {
+  .nav-socials .spacer:before {
     display: none;
   }
 }
@@ -506,7 +504,6 @@ header > .wrapper > img {
   scroll-behavior: smooth;
   margin: 10vh 0;
   overflow-x: hidden;
-  z-index: 1;
   width: 100%;
   -ms-scroll-snap-type: inline mandatory;
       scroll-snap-type: inline mandatory;
@@ -621,9 +618,6 @@ header > .wrapper > img {
 @media (max-width: 768px) {
   .email {
     font-size: .75rem;
-    top: 10%;
-    -webkit-transform: translate(-50%, -10%);
-            transform: translate(-50%, -10%);
   }
 }
 

@@ -93,7 +93,6 @@ header {
   scroll-behavior: smooth;
   margin: 10vh 0;
   overflow-x: hidden;
-  z-index: 1;
   width: 100%;
   scroll-snap-type: inline mandatory;
 
@@ -195,8 +194,6 @@ header {
 
   @include media('<=tablet') {
     font-size: .75rem;
-    top: 10%;
-    transform: translate(-50%, -10%);
   }
 
   @include media('<=phone') {

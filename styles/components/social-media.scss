@@ -63,8 +63,7 @@
     }
   }
 
-  .spacer,
-  >span {
+  .spacer {
     @include media('<=tablet') {
       display: none;
     }
