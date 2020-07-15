@@ -117,7 +117,6 @@ header {
       margin-left: 50%;
       margin-right: 50%;
     }
-
   }
 }
 
@@ -151,10 +150,10 @@ header {
 @supports(padding: unquote('max(0px)')) {
   html {
     >&:not(header) {
-      padding-left: unquote('max(10rem, env(safe-area-inset-left))');
-      padding-right: unquote('max(10rem, env(safe-area-inset-right))');
-      padding-bottom: unquote('max(10rem, env(safe-area-inset-bottom))');
-      padding-top: unquote('max(10rem, env(safe-area-inset-top))');
+      padding-left: unquote('max(4rem, env(safe-area-inset-left))');
+      padding-right: unquote('max(4rem, env(safe-area-inset-right))');
+      padding-bottom: unquote('max(4rem, env(safe-area-inset-bottom))');
+      padding-top: unquote('max(4rem, env(safe-area-inset-top))');
     }
   }
 }
