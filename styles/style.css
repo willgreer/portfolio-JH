@@ -7,8 +7,6 @@
   position: fixed;
   bottom: 1rem;
   left: 0;
-  width: 100%;
-  max-height: 100%;
 }
 
 @media (max-width: 768px) {
@@ -389,12 +387,46 @@ a:link, a:visited {
 }
 
 * {
+  background-color: rgba(255, 0, 0, 0.2);
+}
+
+* * {
+  background-color: rgba(0, 255, 0, 0.2);
+}
+
+* * * {
+  background-color: rgba(0, 0, 255, 0.2);
+}
+
+* * * * {
+  background-color: rgba(255, 0, 255, 0.2);
+}
+
+* * * * * {
+  background-color: rgba(0, 255, 255, 0.2);
+}
+
+* * * * * * {
+  background-color: rgba(255, 255, 0, 0.2);
+}
+
+* * * * * * * {
+  background-color: rgba(255, 0, 0, 0.2);
+}
+
+* * * * * * * * {
+  background-color: rgba(0, 255, 0, 0.2);
+}
+
+* * * * * * * * * {
+  background-color: rgba(0, 0, 255, 0.2);
+}
+
+* {
   margin: 0px;
   padding: 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  max-width: 100vw;
-  max-height: 100vh;
 }
 
 body {
@@ -407,14 +439,12 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   font-family: le-havre, sans-serif;
   background-color: #ffffff;
   color: black;
-  overflow-y: hidden;
+  overflow: hidden;
+  max-width: 100vw;
+  max-height: 100vh;
 }
 
 header {
@@ -427,9 +457,15 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100vw;
-  padding: 2rem;
-  padding-bottom: 1rem;
+  max-width: 100%;
+  max-height: 30vh;
+  background-color: #fff;
+}
+
+@media (max-width: 425px) {
+  header {
+    max-width: 100vw;
+  }
 }
 
 header > .wrapper {
@@ -442,13 +478,7 @@ header > .wrapper {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-height: 20vh;
-}
-
-@media (max-width: 425px) {
-  header > .wrapper {
-    max-width: 100vw;
-  }
+  max-width: 100%;
 }
 
 header > .wrapper > svg {
@@ -462,8 +492,8 @@ header > .wrapper > svg {
 
 @media (max-width: 425px) {
   header > .wrapper > svg {
-    max-height: 200px;
-    max-width: 280px;
+    height: 200px;
+    width: 280px;
     padding: 1rem 0 0 1rem;
   }
 }
@@ -485,7 +515,6 @@ header > .wrapper > img {
 }
 
 .img-box {
-  margin-left: var(--x);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -503,24 +532,21 @@ header > .wrapper > img {
   white-space: nowrap;
   scroll-behavior: smooth;
   margin: 10vh 0;
-  overflow-x: hidden;
-  width: 100%;
+  overflow: hidden;
+  width: 100vw;
   -ms-scroll-snap-type: inline mandatory;
       scroll-snap-type: inline mandatory;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
-@media (max-width: 768px) {
-  .img-box {
-    overflow-x: scroll;
-  }
-  .img-box::-webkit-scrollbar {
-    display: none;
-  }
+.img-box::-webkit-scrollbar {
+  display: none;
 }
 
 @media (max-width: 425px) {
   .img-box {
-    margin: 2rem auto;
+    max-width: 80vw;
   }
 }
 
@@ -528,8 +554,8 @@ header > .wrapper > img {
   display: inline-block;
   vertical-align: middle;
   scroll-snap-align: center;
-  max-height: 95vw;
-  max-width: 95vw;
+  max-width: 100%;
+  height: auto;
 }
 
 .img-box img:nth-child(n) {
@@ -538,63 +564,29 @@ header > .wrapper > img {
 }
 
 .arrows {
-  font-size: .5rem;
-  z-index: 10;
-  visibility: hidden;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 2rem;
+  position: absolute;
+  top: 55%;
 }
 
 .arrows .arrow-left {
-  position: absolute;
-  bottom: 40vh;
-  left: 20vw;
-  -webkit-transition: opacity 0.5s ease-in-out;
-  transition: opacity 0.5s ease-in-out;
-}
-
-@media (max-width: 768px) {
-  .arrows .arrow-left {
-    left: 45vw;
-    bottom: 7vh;
-  }
-}
-
-@media (max-width: 425px) {
-  .arrows .arrow-left {
-    bottom: 7vh;
-    z-index: 10;
-  }
-}
-
-.arrows .arrow-left:hover {
-  cursor: pointer;
-  opacity: .8;
+  background: white;
+  margin-left: 10rem;
 }
 
 .arrows .arrow-right {
-  position: absolute;
-  bottom: 40vh;
-  right: 20vw;
-  -webkit-transition: opacity 0.5s ease-in-out;
-  transition: opacity 0.5s ease-in-out;
-}
-
-@media (max-width: 768px) {
-  .arrows .arrow-right {
-    right: 45vw;
-    bottom: 7vh;
-  }
-}
-
-@media (max-width: 425px) {
-  .arrows .arrow-right {
-    bottom: 7vh;
-    z-index: 10;
-  }
-}
-
-.arrows .arrow-right:hover {
-  cursor: pointer;
-  opacity: .8;
+  background: white;
+  margin-right: 10rem;
 }
 
 .email {
@@ -618,7 +610,7 @@ header > .wrapper > img {
 @media (max-width: 768px) {
   .email {
     font-size: .75rem;
-    bottom: .4rem;
+    bottom: 1rem;
   }
 }
 
@@ -630,10 +622,10 @@ header > .wrapper > img {
 
 @supports (padding: max(0px)) {
   > html:not(header) {
-    padding-left: max(10rem, env(safe-area-inset-left));
-    padding-right: max(10rem, env(safe-area-inset-right));
-    padding-bottom: max(10rem, env(safe-area-inset-bottom));
-    padding-top: max(10rem, env(safe-area-inset-top));
+    padding-left: max(4rem, env(safe-area-inset-left));
+    padding-right: max(4rem, env(safe-area-inset-right));
+    padding-bottom: max(4rem, env(safe-area-inset-bottom));
+    padding-top: max(4rem, env(safe-area-inset-top));
   }
 }
 /*# sourceMappingURL=style.css.map */

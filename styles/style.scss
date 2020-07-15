@@ -1,47 +1,81 @@
 @import url("https://use.typekit.net/xwu5cqb.css");
-@import "node_modules/normalize-scss/sass/normalize";
-@import 'breakpoints';
-@import 'styles/components/social-media';
-@import 'styles/components/recent-work';
+@import "../node_modules/normalize-scss/sass/normalize";
+@import './breakpoints.scss';
+@import './components/social-media.scss';
+@import './components/recent-work.scss';
 
+* {
+  background-color: rgba(255, 0, 0, .2);
+}
+
+* * {
+  background-color: rgba(0, 255, 0, .2);
+}
+
+* * * {
+  background-color: rgba(0, 0, 255, .2);
+}
+
+* * * * {
+  background-color: rgba(255, 0, 255, .2);
+}
+
+* * * * * {
+  background-color: rgba(0, 255, 255, .2);
+}
+
+* * * * * * {
+  background-color: rgba(255, 255, 0, .2);
+}
+
+* * * * * * * {
+  background-color: rgba(255, 0, 0, .2);
+}
+
+* * * * * * * * {
+  background-color: rgba(0, 255, 0, .2);
+}
+
+* * * * * * * * * {
+  background-color: rgba(0, 0, 255, .2);
+}
 
 
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  max-width: 100vw;
-  max-height: 100vh;
 }
 
 body {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
   font-family: le-havre, sans-serif;
   background-color: #ffffff;
   color: rgb(0, 0, 0);
-  overflow-y: hidden;
+  overflow: hidden;
+  max-width: 100vw;
+  max-height: 100vh;
 }
 
 header {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100vw;
-  padding: 2rem;
-  padding-bottom: 1rem;
+  max-width: 100%;
+  max-height: 30vh;
+  background-color: #fff;
+
+  @include media('<=phone') {
+    max-width: 100vw;
+  }
 
   >.wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-height: 20vh;
-
-    @include media('<=phone') {
-      max-width: 100vw;
-    }
+    max-width: 100%;
 
     >svg {
       position: relative;
@@ -52,8 +86,8 @@ header {
       z-index: 1;
 
       @include media('<=phone') {
-        max-height: 200px;
-        max-width: 280px;
+        height: 200px;
+        width: 280px;
         padding: 1rem 0 0 1rem;
       }
     }
@@ -78,7 +112,6 @@ header {
 
 
 .img-box {
-  margin-left: var(--x);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -89,29 +122,26 @@ header {
   white-space: nowrap;
   scroll-behavior: smooth;
   margin: 10vh 0;
-  overflow-x: hidden;
-  width: 100%;
+  overflow: hidden;
+  width: 100vw;
   scroll-snap-type: inline mandatory;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 
-
-  @include media ('<=tablet') {
-    overflow-x: scroll;
-
-    &::-webkit-scrollbar {
-      display: none;
-    }
+  &::-webkit-scrollbar {
+    display: none;
   }
 
   @include media ('<=phone') {
-    margin: 2rem auto;
+    max-width: 80vw;
   }
 
   img {
     display: inline-block;
     vertical-align: middle;
     scroll-snap-align: center;
-    max-height: 95vw;
-    max-width: 95vw;
+    max-width: 100%;
+    height: auto;
 
     &:nth-child(n) {
       margin-left: 50%;
@@ -120,6 +150,25 @@ header {
   }
 }
 
+.arrows {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2rem;
+  position: absolute;
+  top: 55%;
+
+  .arrow-left {
+    background: white;
+    margin-left: 10rem;
+  }
+
+  .arrow-right {
+    background: white;
+    margin-right: 10rem;
+  }
+}
 
 
 .email {
@@ -139,7 +188,7 @@ header {
 
   @include media('<=tablet') {
     font-size: .75rem;
-    bottom: .4rem;
+    bottom: 1rem;
   }
 
   @include media('<=phone') {
