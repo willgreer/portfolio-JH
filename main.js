@@ -11,9 +11,9 @@ document.addEventListener('wheel', function (e) {
 });
 
 arrowRight.addEventListener('click', function () {
-    page.scrollLeft += 500;
+    page.scrollLeft += 1000;
 })
 
 arrowLeft.addEventListener('click', function () {
-    page.scrollLeft -= 500;
+    page.scrollLeft -= 1000;
 })
